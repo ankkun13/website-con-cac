@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# 🧐 Chat Skibidi with anime girl
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repository này nhằm mục đính học tập và phục vụ môn học trên lớp
 
-Currently, two official plugins are available:
+### 💀 Yêu cầu
+- Node.js [Download](https://nodejs.org/en/download)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mở terminal và kiểm tra version của Node.js và npm
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+node -v
+npm -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Hướng dẫn clone repo và sử dụng
+**1. Fork repo**
+- Vào Github repo muốn truy cập [Tại đây](https://github.com/ankkun13/website-con-cac)
+- Nhấn **Fork** (góc trên bên phải)
+- GitHub sẽ tạo 1 bản copy của repo đó trong tài khoản của bạn
 ```
+https://github.com/your-username/website-con-cac
+```
+
+**2. Clone repo đã fork về máy**
+```
+git clone https://github.com/your-username/website-con-cac.git
+cd website-con-cac
+```
+Trước khi code cần cài đặt thư viện và môi trường
+```
+npm install
+npm dev run
+```
+**3. Tạo branch mới để code**
+Không code trực tiếp trên `main`, tốt nhất tạo branch riêng:
+```
+git checkout -b your-branch
+```
+
+**4. Code và commit**
+Sau khi code và muốn commit code của mình
+```
+git add .
+git commit -m "Mô tả thay đổi của bạn"
+```
+
+**5. Push branch lên repo fork của bạn**
+```
+git push origin your-branch
+```
+
+**6. Tạo Pull Request**
+- Vào repo fork trên GitHub
+- Nhấn Compare & Pull Request để gửi thay đổi từ branch của bạn về repo gốc
+
+------------
+
+### Còn nữa ~~~
