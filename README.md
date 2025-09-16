@@ -29,7 +29,7 @@ cd website-con-cac
 Trước khi code cần cài đặt thư viện và môi trường
 ```
 npm install
-npm dev run
+npm run dev
 ```
 **3. Tạo branch mới để code**
 Không code trực tiếp trên `main`, tốt nhất tạo branch riêng:
